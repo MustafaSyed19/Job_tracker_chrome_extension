@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1>Job Tracker</h1>
+    <button id="export" class="ghost" title="Download all jobs as a CSV file for Excel">Export CSV</button>
+  </header>
+
+  <section id="current" class="card">
+    <p class="muted">Checking this page…</p>
+  </section>
+
+  <p id="summary" class="muted"></p>
+  <ul id="jobs"></ul>
+  <p id="empty" class="muted" hidden>
+    No saved jobs yet. Open a LinkedIn job and click Save, or just apply and it will show up here.
+  </p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
